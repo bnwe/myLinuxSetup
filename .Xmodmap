@@ -2,7 +2,8 @@
 !  Caps-Lock to Ctrl
 !  Alt Gr key to Ctrl
 !  Right Windows key to Alt Gr
-! TODO: Map left Ctrl key to hyper (for emacs)
+!
+! How to use: put this file into $HOME and name it ".Xmodmap" and xmodmap will parse it on login.
 
 clear lock
 clear control

@@ -1,0 +1,45 @@
+! This file remaps:
+!  Caps-Lock to Ctrl
+!  Alt Gr key to Ctrl
+!  Right Windows key to Alt Gr
+! TODO: Map left Ctrl key to hyper (for emacs)
+
+clear lock
+clear control
+clear mod1
+clear mod4
+clear mod5
+
+! This was the original configuration:
+
+!shift       Shift_L (0x32),  Shift_R (0x3e)
+!lock        Caps_Lock (0x42)
+!control     Control_L (0x25),  Control_R (0x69)
+!mod1        Alt_L (0x40),  Meta_L (0xcd)
+!mod2        Num_Lock (0x4d)
+!mod3      
+!mod4        Super_L (0x85),  Super_R (0x86),  Super_L (0xce),  Hyper_L (0xcf)
+!mod5        ISO_Level3_Shift (0x5c),  Mode_switch (0xcb)
+
+!keycode  64 = Alt_L Meta_L Alt_L Meta_L
+!keycode  66 = Caps_Lock NoSymbol Caps_Lock
+!keycode  37 = Control_L NoSymbol Control_L
+!keycode 108 = ISO_Level3_Shift NoSymbol ISO_Level3_Shift
+!keycode 134 = Super_R NoSymbol Super_R
+
+! Make Left Control to Control like normal:
+keycode  37 = Control_L NoSymbol Control_L
+! Make CapsLock key to Control:
+keycode  66 = Control_L NoSymbol Control_L
+! Make AltGr key to Control
+keycode 108 = Control_L NoSymbol Control_L
+! Make right Windows key to Alt Gr:
+keycode 134 = ISO_Level3_Shift NoSymbol ISO_Level3_Shift
+
+! Optional: Disable left control key (for getting used to it)
+!keycode  37 =
+
+add control = Control_L Control_R
+add mod1 = Alt_L Meta_L
+add mod4 =  Super_L Hyper_L
+add mod5 = ISO_Level3_Shift Mode_switch

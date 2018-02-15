@@ -1,0 +1,57 @@
+* Notes
+- This is for xfce 4.12
+
+* Location of config file
+~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+
+* Command to get the current config
+xfconf-query -c xfce4-keyboard-shortcuts -l -v
+
+* Custom section of the config file for application shortcuts
+
+    <property name="custom" type="empty">
+      <property name="Print" type="string" value="xfce4-screenshooter -f"/>
+      <property name="&lt;Alt&gt;Print" type="string" value="xfce4-screenshooter -w"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xflock4"/>
+      <property name="XF86Explorer" type="string" value="exo-open --launch FileManager"/>
+      <property name="&lt;Alt&gt;F3" type="string" value="xfce4-appfinder">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Alt&gt;F2" type="string" value="xfrun4">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Super&gt;1" type="string" value="parole"/>
+      <property name="&lt;Super&gt;2" type="string" value="pidgin"/>
+      <property name="&lt;Super&gt;3" type="string" value="libreoffice --writer"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
+      <property name="&lt;Super&gt;r" type="string" value="xfce4-appfinder"/>
+      <property name="&lt;Super&gt;w" type="string" value="exo-open --launch WebBrowser"/>
+      <property name="&lt;Super&gt;4" type="string" value="libreoffice --calc"/>
+      <property name="XF86Display" type="string" value="xfce4-display-settings --minimal"/>
+      <property name="&lt;Alt&gt;F1" type="string" value="xfce4-popup-applicationsmenu"/>
+      <property name="XF86WWW" type="string" value="exo-open --launch WebBrowser"/>
+      <property name="XF86Mail" type="string" value="exo-open --launch MailReader"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;Escape" type="string" value="xkill"/>
+      <property name="XF86Messenger" type="string" value="pidgin"/>
+      <property name="XF86Calculator" type="string" value="gnome-calculator"/>
+      <property name="XF86Music" type="string" value="parole"/>
+      <property name="XF86HomePage" type="string" value="exo-open --launch WebBrowser"/>
+      <property name="override" type="bool" value="true"/>
+      <property name="&lt;Super&gt;l" type="string" value="xflock4"/>
+      <property name="&lt;Alt&gt;Escape" type="string" value="xfce4-popup-whiskermenu"/>
+      <property name="&lt;Super&gt;i" type="string" value="/home/bnwe/bin/appswitch.sh Eclipse starteclipse"/>
+      <property name="&lt;Super&gt;q" type="string" value="/home/bnwe/bin/appswitch.sh designer xfce4-terminal"/>
+      <property name="&lt;Super&gt;k" type="string" value="/home/bnwe/bin/appswitch.sh Kopano kopano-deskapp"/>
+      <property name="&lt;Super&gt;p" type="string" value="/home/bnwe/bin/appswitch.sh keepassx keepassx"/>
+      <property name="&lt;Super&gt;c" type="string" value="/home/bnwe/privat/appswitcher/appswitch.py chromium chromium-browser"/>
+      <property name="&lt;Super&gt;s" type="string" value="/home/bnwe/privat/appswitcher/appswitch.py xfce4-terminal xfce4-terminal"/>
+      <property name="&lt;Super&gt;e" type="string" value="/home/bnwe/privat/appswitcher/appswitch.py emacs emacs"/>
+      <property name="&lt;Super&gt;o" type="string" value="/home/bnwe/privat/appswitcher/appswitch.py libreoffice"/>
+      <property name="&lt;Super&gt;v" type="string" value="/home/bnwe/privat/appswitcher/appswitch.py VirtualBox"/>
+      <property name="&lt;Super&gt;b" type="string" value="/home/bnwe/privat/appswitcher/appswitch.py nemo nemo"/>
+      <property name="&lt;Super&gt;t" type="string" value="/home/bnwe/privat/appswitcher/appswitch.py thunderbird thunderbird"/>
+      <property name="&lt;Super&gt;f" type="string" value="/home/bnwe/privat/appswitcher/appswitch.py Navigator firefox"/>
+    </property>
+
+* How to set via GUI
+Go to keyboard seetings -> tab 'Application Shortcuts'

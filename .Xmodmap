@@ -2,6 +2,7 @@
 !  Caps-Lock to Ctrl
 !  Alt Gr key to Ctrl
 !  Right Windows key to Alt Gr
+!  Right Ctrl key to Alt Gr
 !
 ! How to use: put this file into $HOME and name it ".Xmodmap" and xmodmap will parse it on login.
 
@@ -36,6 +37,8 @@ keycode  66 = Control_L NoSymbol Control_L
 keycode 108 = Control_L NoSymbol Control_L
 ! Make right Windows key to Alt Gr:
 keycode 134 = ISO_Level3_Shift NoSymbol ISO_Level3_Shift
+! Make right Ctrl to Alt Gr:
+keycode 105 = ISO_Level3_Shift NoSymbol ISO_Level3_Shift 
 
 ! Optional: Disable left control key (for getting used to it)
 !keycode  37 =

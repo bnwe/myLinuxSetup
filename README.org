@@ -1,1 +1,18 @@
-This repo contains config files and scripts for setting up my custom Linux environment.
+* This repo contains config files and scripts for setting up my custom Linux environment.
+
+** Customize Ubuntu Mate
+
+Get list of keybinding schemas:
+#+begin_src
+gsettings list-schemas
+#+end_src
+
+In the schema org.mate.Marco.global-keybindings set the key _run-command-6_, because it is Win+S by default:
+
+#+begin_src
+gsettings set org.mate.Marco.global-keybindings run-command-6 ''
+#+end_src
+
+Do this for all keybindings you want to re-use
+
+

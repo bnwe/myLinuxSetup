@@ -16,7 +16,6 @@
 	lb = !git blog $(git merge-base HEAD @{upstream})^..@{upstream} $(git merge-base HEAD @{upstream})^..HEAD
 	wshow = -c color.diff.old='white red' -c color.diff.new='black green' show --word-diff=color
 	wdiff = -c color.diff.old='white red' -c color.diff.new='black green' diff --word-diff=color
-	push-for-review = push gerrit HEAD:refs/for/master
 
 [core]
 	editor = emacsclient -nw

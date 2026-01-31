@@ -1,5 +1,5 @@
 [/]
-custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', '__dummy__']
+custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', '__dummy__']
 
 [custom-keybindings/custom0]
 binding=['<Primary><Shift>c']
@@ -31,6 +31,11 @@ binding=['<Super>c']
 command='python3 /home/bnwe/code/apphopper/apphopper.py Chromium-browser'
 name='Run or raise Chromium'
 
+[custom-keybindings/custom6]
+binding=['<Super>p']
+command='python3 /home/bnwe/code/apphopper/apphopper.py KeePassXC'
+name='Run or raise KeepassXC'
+
 [media-keys]
 home=['XF86Explorer']
 search=['XF86Search']
@@ -43,4 +48,5 @@ maximize=['<Super>Up']
 push-tile-down=@as []
 push-tile-up=@as []
 show-desktop=@as []
+switch-monitor=['XF86Display']
 unmaximize=['<Alt>F5', '<Super>Down']

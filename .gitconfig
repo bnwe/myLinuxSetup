@@ -1,6 +1,6 @@
 [user]
 	name = Benjamin Wiese
-	email = benjamin.wiese@methodpark.de
+	email = 20987660+bnwe@users.noreply.github.com
 
 [alias]
 	ci = commit -v
@@ -18,6 +18,6 @@
 	wdiff = -c color.diff.old='white red' -c color.diff.new='black green' diff --word-diff=color
 
 [core]
-	editor = emacsclient -nw
+	editor = vim
 [push]
 	default = tracking

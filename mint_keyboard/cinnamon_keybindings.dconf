@@ -1,0 +1,46 @@
+[/]
+custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', '__dummy__']
+
+[custom-keybindings/custom0]
+binding=['<Primary><Shift>c']
+command='/usr/bin/diodon'
+name='Diodon Clipboard'
+
+[custom-keybindings/custom1]
+binding=['<Super>v']
+command='python3 /home/bnwe/code/apphopper/apphopper.py code'
+name='Run or raise VS Code'
+
+[custom-keybindings/custom2]
+binding=['<Super>f']
+command='python3 /home/bnwe/code/apphopper/apphopper.py Navigator.firefox'
+name='Run or raise Firefox'
+
+[custom-keybindings/custom3]
+binding=['<Super>x']
+command='python3 /home/bnwe/code/apphopper/apphopper.py Gnome-terminal'
+name='Run or raise Terminal'
+
+[custom-keybindings/custom4]
+binding=['<Primary><Shift>f', '<Super>d']
+command='python3 /home/bnwe/code/apphopper/apphopper.py nemo.Nemo'
+name='Run or raise Nemo'
+
+[custom-keybindings/custom5]
+binding=['<Super>c']
+command='python3 /home/bnwe/code/apphopper/apphopper.py Chromium-browser'
+name='Run or raise Chromium'
+
+[media-keys]
+home=['XF86Explorer']
+search=['XF86Search']
+terminal=['<Primary><Alt>t']
+
+[wm]
+activate-window-menu=@as []
+begin-resize=['<Alt>F8']
+maximize=['<Super>Up']
+push-tile-down=@as []
+push-tile-up=@as []
+show-desktop=@as []
+unmaximize=['<Alt>F5', '<Super>Down']

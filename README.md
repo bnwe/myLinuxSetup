@@ -13,6 +13,18 @@ To backup changes made (e.g. in the UI in keyboard settings -> XKB Options:
 dconf dump /org/cinnamon/desktop/input-sources/ > cinnamon-keyboard-macbook.dconf
 ```
 
+
+To load the keyboard shortcuts:
+```
+dconf load /org/cinnamon/desktop/keybindings/ < cinnamon_keybindings.dconf
+```
+
+To backup changes made (e.g. in the UI in keyboard settings -> Shortcuts:
+
+```
+dconf dump /org/cinnamon/desktop/keybindings/ > cinnamon_keybindings.dconf
+```
+
 ## Customize Ubuntu Mate
 
 Get list of keybinding schemas:

@@ -39,4 +39,9 @@ gsettings set org.mate.Marco.global-keybindings run-command-6 ''
 
 Do this for all keybindings you want to re-use
 
+## How to type @ without the q on a German keyboard
+
+- Either use the character map of e.g. Linux Mint
+- Or press Ctrl+Shift+U - then type 40 - then press enter
+
 

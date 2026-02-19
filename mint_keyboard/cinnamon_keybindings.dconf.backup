@@ -1,0 +1,7 @@
+[/]
+custom-list=['custom0']
+
+[custom-keybindings/custom0]
+binding=['<Primary><Shift>f']
+command='apphopper.py nemo.Nemo'
+name='hop nano'

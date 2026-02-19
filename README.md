@@ -1,6 +1,8 @@
 # Config files and scripts for setting up my custom Linux setup
 
-## Linux Mint
+## Linux Mint Cinnamon
+
+### Remapping Keys
 
 To load the xkb remappings for modifiers for the Macbook keyboard run:
 ```
@@ -13,6 +15,7 @@ To backup changes made (e.g. in the UI in keyboard settings -> XKB Options:
 dconf dump /org/cinnamon/desktop/input-sources/ > cinnamon-keyboard-macbook.dconf
 ```
 
+### Keyboard Shortcuts
 
 To load the keyboard shortcuts:
 ```
@@ -24,6 +27,7 @@ To backup changes made (e.g. in the UI in keyboard settings -> Shortcuts:
 ```
 dconf dump /org/cinnamon/desktop/keybindings/ > cinnamon_keybindings.dconf
 ```
+**Important**: The "Grouped Window List" Applet in the panel by default intercepts the super key. Go go the settings of the applet and disable that.
 
 ## Customize Ubuntu Mate
 

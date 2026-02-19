@@ -1,0 +1,3 @@
+[/]
+sources=[('xkb', 'de')]
+xkb-options=['terminate:ctrl_alt_bksp', 'ctrl:swap_ralt_rctl', 'ctrl:nocaps', 'shift:both_capslock', 'lv3:rwin_switch']

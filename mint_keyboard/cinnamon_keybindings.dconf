@@ -1,52 +1,96 @@
 [/]
-custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', '__dummy__']
+custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom7', 'custom8']
+looking-glass-keybinding=@as []
+show-desklets=@as []
 
 [custom-keybindings/custom0]
-binding=['<Primary><Shift>c']
+binding=['<Primary><Shift>d']
 command='/usr/bin/diodon'
 name='Diodon Clipboard'
 
 [custom-keybindings/custom1]
-binding=['<Super>v']
-command='python3 /home/bnwe/code/apphopper/apphopper.py code'
+binding=@as []
+command='python3 /home/benjamin/code/apphopper/apphopper.py code'
 name='Run or raise VS Code'
+
+[custom-keybindings/custom10]
+binding=@as []
+command='python3 /home/bnwe/code/apphopper/apphopper.py code.Code'
+name='apphopper VS Code'
+
+[custom-keybindings/custom11]
+binding=['<Primary>space']
+command='rofi -show window'
+name='Rofi Window'
 
 [custom-keybindings/custom2]
 binding=['<Super>f']
-command='python3 /home/bnwe/code/apphopper/apphopper.py Navigator.firefox'
+command='python3 /home/benjamin/code/apphopper/apphopper.py Navigator.firefox'
 name='Run or raise Firefox'
 
 [custom-keybindings/custom3]
 binding=['<Super>x']
-command='python3 /home/bnwe/code/apphopper/apphopper.py Gnome-terminal'
+command='python3 /home/benjamin/code/apphopper/apphopper.py Gnome-terminal'
 name='Run or raise Terminal'
 
 [custom-keybindings/custom4]
 binding=['<Primary><Shift>f', '<Super>d']
-command='python3 /home/bnwe/code/apphopper/apphopper.py nemo.Nemo'
+command='python3 /home/benjamin/code/apphopper/apphopper.py nemo.Nemo'
 name='Run or raise Nemo'
 
 [custom-keybindings/custom5]
 binding=['<Super>c']
-command='python3 /home/bnwe/code/apphopper/apphopper.py Chromium-browser'
+command='python3 /home/benjamin/code/apphopper/apphopper.py Chromium-browser'
 name='Run or raise Chromium'
 
 [custom-keybindings/custom6]
 binding=['<Super>p']
-command='python3 /home/bnwe/code/apphopper/apphopper.py KeePassXC'
+command='python3 /home/benjamin/code/apphopper/apphopper.py KeePassXC'
 name='Run or raise KeepassXC'
+
+[custom-keybindings/custom7]
+binding=['<Super>v']
+command='python3 /home/benjamin/code/apphopper/apphopper.py Cursor'
+name='Run or raise Cursor'
+
+[custom-keybindings/custom8]
+binding=['<Super>s']
+command='python3 /home/benjamin/code/apphopper/apphopper.py Slack'
+name='Run or raise Slack'
+
+[custom-keybindings/custom9]
+binding=['<Super>k']
+command='python3 /home/bnwe/code/apphopper/apphopper.py keepass'
+name='Keepass'
 
 [media-keys]
 home=['XF86Explorer']
+screensaver=['XF86ScreenSaver', '<Primary><Alt>l']
 search=['XF86Search']
+suspend=['XF86Sleep', '<Primary><Alt>q']
 terminal=['<Primary><Alt>t']
 
 [wm]
 activate-window-menu=@as []
 begin-resize=['<Alt>F8']
-maximize=['<Super>Up']
+maximize=['<Super>Up', '<Primary><Alt>Up']
+minimize=['<Super>Down', '<Primary><Alt>Down']
+move-to-workspace-1=['<Primary><Alt>1']
+move-to-workspace-2=['<Primary><Alt>2']
+move-to-workspace-3=['<Primary><Alt>3']
+move-to-workspace-4=['<Primary><Alt>4']
 push-tile-down=@as []
+push-tile-left=['<Primary><Alt>Left']
+push-tile-right=['<Primary><Alt>Right']
 push-tile-up=@as []
 show-desktop=@as []
 switch-monitor=['XF86Display']
-unmaximize=['<Alt>F5', '<Super>Down']
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']
+switch-to-workspace-down=['<Super>a']
+switch-to-workspace-left=['<Super>h', '<Super>Left']
+switch-to-workspace-right=['<Super>l', '<Super>Right']
+switch-to-workspace-up=['<Alt>F1', '<Super>y']
+unmaximize=['<Alt>F5']

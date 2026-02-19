@@ -1,7 +1,7 @@
 [user]
-	name = Benjamin Wiese
 	email = 20987660+bnwe@users.noreply.github.com
-
+	name = Benjamin Wiese
+	
 [alias]
 	ci = commit -v
 	st = status
@@ -17,7 +17,14 @@
 	wshow = -c color.diff.old='white red' -c color.diff.new='black green' show --word-diff=color
 	wdiff = -c color.diff.old='white red' -c color.diff.new='black green' diff --word-diff=color
 
+	# Create new worktree
+	# This will create a new dir ../wt/new-feature and create a new branch with the same name as the dir: git worktree add ../wt/new-feature
+	# Use like this: git w ../wt/feat-new
+	w = worktree add 
+
 [core]
 	editor = vim
 [push]
 	default = tracking
+[init]
+	defaultBranch = main

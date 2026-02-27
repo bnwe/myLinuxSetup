@@ -10,7 +10,10 @@
 	wip = commit -a -m 'WiP'
 	blog = log --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	blogall= log --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
-	b = log --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -20
+	# The old b alias
+	#b = log --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -12
+	# The new b alias with abbreviated messages. Note that auther uses N instead of n, so that .mailmap is used
+	b = log --graph --pretty=format:'%Cred%h%Creset%C(auto)%d%Creset %<(28,trunc)%s %Cgreen(%cr) %C(bold blue)<%aN>%Creset' --abbrev-commit -12
 	editbranch = !git rebase -i $(git merge-base HEAD $(git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD)))
 	fetchall = fetch --all
 	lb = !git blog $(git merge-base HEAD @{upstream})^..@{upstream} $(git merge-base HEAD @{upstream})^..HEAD
@@ -28,3 +31,5 @@
 	default = tracking
 [init]
 	defaultBranch = main
+[mailmap]
+	file = /home/benjamin/.mailmap

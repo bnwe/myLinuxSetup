@@ -29,6 +29,10 @@ dconf dump /org/cinnamon/desktop/keybindings/ > cinnamon_keybindings.dconf
 ```
 **Important**: The "Grouped Window List" Applet in the panel by default intercepts the super key. Go go the settings of the applet and disable that.
 
+### Backup and restore panel layout (also helps after crash sometimes)
+
+See the backup and restore scripts
+
 ## Customize Ubuntu Mate
 
 Get list of keybinding schemas:

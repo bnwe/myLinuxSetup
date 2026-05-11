@@ -10,7 +10,7 @@ name='Diodon Clipboard'
 
 [custom-keybindings/custom1]
 binding=@as []
-command='python3 /home/benjamin/code/apphopper/apphopper.py code'
+command='python3 /home/bnwe/code/apphopper/apphopper.py code'
 name='Run or raise VS Code'
 
 [custom-keybindings/custom10]
@@ -20,7 +20,7 @@ name='Clipman'
 
 [custom-keybindings/custom11]
 binding=['<Super>d']
-command='python3 /home/benjamin/code/apphopper/apphopper.py Xreader'
+command='python3 /home/bnwe/code/apphopper/apphopper.py Xreader'
 name='Run Xreader (PDFs)'
 
 [custom-keybindings/custom12]
@@ -30,47 +30,47 @@ name='Show main window of copyq'
 
 [custom-keybindings/custom13]
 binding=['<Super>l']
-command='python3 /home/benjamin/code/apphopper/apphopper.py Claude.Claude'
+command='python3 /home/bnwe/code/apphopper/apphopper.py Claude.Claude'
 name='Raise Claude Desktop'
 
 [custom-keybindings/custom14]
 binding=['<Super>e']
-command='python3 /home/benjamin/code/apphopper/apphopper.py obsidian.obsidian'
+command='python3 /home/bnwe/code/apphopper/apphopper.py obsidian.obsidian'
 name='Raise Obsidian'
 
 [custom-keybindings/custom2]
 binding=['<Super>f']
-command='python3 /home/benjamin/code/apphopper/apphopper.py Navigator.firefox'
+command='python3 /home/bnwe/code/apphopper/apphopper.py Navigator.firefox'
 name='Run or raise Firefox'
 
 [custom-keybindings/custom3]
 binding=['<Super>x']
-command='python3 /home/benjamin/code/apphopper/apphopper.py Gnome-terminal gnome-terminal'
+command='python3 /home/bnwe/code/apphopper/apphopper.py Gnome-terminal gnome-terminal'
 name='Run or raise Terminal'
 
 [custom-keybindings/custom4]
 binding=['<Primary><Shift>f']
-command='python3 /home/benjamin/code/apphopper/apphopper.py nemo.Nemo'
+command='python3 /home/bnwe/code/apphopper/apphopper.py nemo.Nemo'
 name='Run or raise Nemo'
 
 [custom-keybindings/custom5]
 binding=['<Super>c']
-command='python3 /home/benjamin/code/apphopper/apphopper.py Chromium-browser'
+command='python3 /home/bnwe/code/apphopper/apphopper.py Chromium-browser'
 name='Run or raise Chromium'
 
 [custom-keybindings/custom6]
 binding=['<Super>k']
-command='python3 /home/benjamin/code/apphopper/apphopper.py KeePassXC'
+command='python3 /home/bnwe/code/apphopper/apphopper.py KeePassXC'
 name='Run or raise KeepassXC'
 
 [custom-keybindings/custom7]
 binding=['<Super>v']
-command='python3 /home/benjamin/code/apphopper/apphopper.py Cursor'
+command='python3 /home/bnwe/code/apphopper/apphopper.py Cursor'
 name='Run or raise Cursor'
 
 [custom-keybindings/custom8]
 binding=['<Super>s']
-command='python3 /home/benjamin/code/apphopper/apphopper.py Slack'
+command='python3 /home/bnwe/code/apphopper/apphopper.py Slack'
 name='Run or raise Slack'
 
 [custom-keybindings/custom9]

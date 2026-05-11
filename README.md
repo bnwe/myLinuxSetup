@@ -4,15 +4,15 @@
 
 ### Remapping Keys
 
-To load the xkb remappings for modifiers for the Macbook keyboard run:
+To load the xkb remappings for modifiers for the keyboard run:
 ```
-dconf load /org/cinnamon/desktop/input-sources/ < cinnamon-keyboard-macbook.dconf
+dconf load /org/cinnamon/desktop/input-sources/ < cinnamon-keyboard-X9-internal.dconf
 ```
 
 To backup changes made (e.g. in the UI in keyboard settings -> XKB Options:
 
 ```
-dconf dump /org/cinnamon/desktop/input-sources/ > cinnamon-keyboard-macbook.dconf
+dconf dump /org/cinnamon/desktop/input-sources/ > cinnamon-keyboard-X9-internal.dconf
 ```
 
 ### Keyboard Shortcuts
